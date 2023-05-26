@@ -1,9 +1,8 @@
-import React from "react";
+//config.js
 import { createChatBotMessage } from "react-chatbot-kit";
 
-
 const config = {
-  initialMessages: [createChatBotMessage(`Hello world`)],
-};
+  initialMessages: [createChatBotMessage(`Hi, need help?`)]
+}
 
 export default config;

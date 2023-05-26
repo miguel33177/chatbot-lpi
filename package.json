@@ -13,6 +13,7 @@
     "postcss-flexbugs-fixes": "^5.0.2",
     "react": "^16.13.1",
     "react-chatbot-kit": "^1.0.5",
+    "react-cookie": "^4.1.1",
     "react-dom": "^16.13.1",
     "react-scripts": "5.0.1",
     "react-util-kit": "^0.0.14",
