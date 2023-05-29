@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Chatbot from "react-chatbot-kit";
 import FloatingButton from "./FloatingButton";
 import config from "./chatbot/config";
@@ -9,23 +9,17 @@ import "./App.css";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
-
-  useEffect(() => {
-    const chatbotData = localStorage.getItem("chatbotData");
-    if (chatbotData) {
-      setIsOpen(JSON.parse(chatbotData).isOpen);
-    } else {
-      
-      localStorage.setItem("chatbotInitialMessages", JSON.stringify(config.initialMessages));
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("chatbotData", JSON.stringify({ isOpen }));
-  }, [isOpen]);
-
   const handleToggleChatbot = () => {
     setIsOpen(!isOpen);
+  };
+
+  const saveMessages = (messages) => {
+    localStorage.setItem("chatbotMessages", JSON.stringify(messages));
+  };
+
+  const loadMessages = () => {
+    const messages = JSON.parse(localStorage.getItem("chatbotMessages"));
+    return messages;
   };
 
   return (
@@ -36,7 +30,9 @@ function App() {
           <Chatbot
             config={config}
             actionProvider={ActionProvider}
+            messageHistory={loadMessages()}
             messageParser={MessageParser}
+            saveMessages={saveMessages}
           />
         </div>
       )}
