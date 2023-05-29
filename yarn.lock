@@ -9027,14 +9027,19 @@ react-app-polyfill@^3.0.0:
     regenerator-runtime "^0.13.9"
     whatwg-fetch "^3.6.2"
 
-react-chatbot-kit@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.npmjs.org/react-chatbot-kit/-/react-chatbot-kit-1.0.5.tgz"
-  integrity sha512-wzktupbkH2LqZZWxTK3bo5l4FdVTp8fnLrzn0rMCn71PDTxJAbH+FkESxrPAfBwQnSVQc3Pbs2Z9dp1ViuluYg==
+react-chatbot-kit@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/react-chatbot-kit/-/react-chatbot-kit-2.0.0.tgz"
+  integrity sha512-Dk1BxksmWM6eszFP6SSrfQpohZnOKBFAeA8njPin6+HKxMzTtBMv85mU/IY8qnbjEhthTAYoDUgTrJQxsG2THw==
   dependencies:
     classnames "^2.2.6"
     css-loader "^3.5.1"
-    react-util-kit "0.0.14"
+    react-conditionally-render "^1.0.2"
+
+react-conditionally-render@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/react-conditionally-render/-/react-conditionally-render-1.0.2.tgz"
+  integrity sha512-CtjIgaLHVDSgHis3gv/PT/8EnD6GPUL8PrhUjh7DP6S5Y3p56dGu7y2nVg6pYv1kv+fGznRhRmX3assr/vRw3A==
 
 react-cookie@^4.1.1:
   version "4.1.1"
@@ -9175,7 +9180,7 @@ react-scripts@5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
-react-util-kit@^0.0.14, react-util-kit@0.0.14:
+react-util-kit@^0.0.14:
   version "0.0.14"
   resolved "https://registry.npmjs.org/react-util-kit/-/react-util-kit-0.0.14.tgz"
   integrity sha512-eLG0ZgQABz8pHMtbVWhr4K84c2X2F4CyrLOAElUf4VGM035XlXfnKzEIsZ5/gOLooe9dB2d2dnfTPqcu4d7toA==
@@ -9183,7 +9188,7 @@ react-util-kit@^0.0.14, react-util-kit@0.0.14:
     react "16.6.0"
     webpack "4.23.1"
 
-react@*, react@^16.13.1, "react@>= 16", "react@>= 16.3.0", react@16.13.1:
+react@*, react@^16.13.1, "react@>= 16", "react@>= 16.3.0":
   version "16.13.1"
   resolved "https://registry.npmjs.org/react/-/react-16.13.1.tgz"
   integrity sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
