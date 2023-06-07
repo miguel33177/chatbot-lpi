@@ -1,2 +1,2 @@
-# chatbot-lpi
-# chatbot-lpi
+# chatbot-lpi-frontend React.js
+
